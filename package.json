@@ -1,6 +1,6 @@
 {
   "name": "@gbesse/jev-dotation-locale-proof",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Évalue si un dossier de dotation locale contient des preuves suffisamment précises pour être revu.",
   "type": "module",
   "license": "MIT",
@@ -24,9 +24,10 @@
     "check": "node scripts/check.mjs",
     "typecheck": "tsc --noEmit --strict --target ES2022 --module NodeNext docs/public-api-types.mts",
     "test": "node --test",
-    "demo": "node examples/demo.mjs && node examples/cas-limite.mjs",
+    "demo": "node examples/demo.mjs && node examples/cas-limite.mjs && node examples/revue-humaine.mjs",
     "demo:principal": "node examples/demo.mjs",
-    "demo:limite": "node examples/cas-limite.mjs"
+    "demo:limite": "node examples/cas-limite.mjs",
+    "demo:revue": "node examples/revue-humaine.mjs"
   },
   "devDependencies": {
     "typescript": "5.9.3"
